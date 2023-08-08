@@ -1,0 +1,23 @@
+.items-mobile {
+    position: relative;
+    padding-bottom: 120px;
+    background: rgba(238, 238, 238, 0.60);
+    display: none;
+    &__items {
+        width: 832px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 45px;
+        row-gap: 25px;
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__item-text {
+        color: #1D1E23;
+        font-size: 20px;
+    }
+}
