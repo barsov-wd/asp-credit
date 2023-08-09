@@ -746,7 +746,7 @@
         }
         &__menu-button {
             width: 375px;
-            padding: 17px 56px;
+            padding: 17px 0;
         }
     }
 }
@@ -814,6 +814,9 @@
     }
     .get {
         padding-bottom: 95px;
+        &-slider {
+            padding-top: 10px;
+        }
         &__items {
             position: relative;
             align-items: center;
@@ -980,7 +983,7 @@
     }
     .footer {
         &__menu-button {
-            padding: 15px 53px;
+            padding: 15px 0;
             width: 345px;
             font-size: 18px;
         }
@@ -1430,7 +1433,7 @@
             width: 361px;
             height: 55px;
             font-size: 18px;
-            padding: 15px 65px;
+            padding: 15px 0;
         }
         &__inner {
             margin-bottom: 40px;
@@ -1870,7 +1873,7 @@
         &__menu-button {
             width: 335px;
             height: 50px;
-            padding: 10px 65px;
+            padding: 10px 0;
             font-size: 16px;
         }
         &__logo {
@@ -1932,6 +1935,10 @@
         .container {
             padding-left: 0;
             padding-right: 0;
+        }
+        &__block {
+            padding-top: 55px;
+            min-height: 575px;
         }
         &__block-inputs {
             width: 335px;
@@ -2106,7 +2113,8 @@
             opacity: .2;
         }
         &__title {
-            margin-bottom: 25px;
+            width: 335px;
+            margin: 0 auto 25px;
         }
         &__item-text {
             padding-top: 163px;
@@ -2156,6 +2164,7 @@
         &__image-bg {
             bottom: 306px;
             width: 100%;
+            z-index: -1;
         }
     }
     .specialists {

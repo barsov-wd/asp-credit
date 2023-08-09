@@ -57,32 +57,33 @@
         font-family: 'Gilroy Black', sans-serif;
         font-weight: 900;
         letter-spacing: 0.8px;
-        color: #fff;
-        text-shadow:
-            -0 -2px 0 #FFC700,
-            0 -2px 0 #FFC700,
-            -0 2px 0 #FFC700,
-            0 2px 0 #FFC700,
-            -2px -0 0 #FFC700,
-            2px -0 0 #FFC700,
-            -2px 0 0 #FFC700,
-            2px 0 0 #FFC700,
-            -1px -2px 0 #FFC700,
-            1px -2px 0 #FFC700,
-            -1px 2px 0 #FFC700,
-            1px 2px 0 #FFC700,
-            -2px -1px 0 #FFC700,
-            2px -1px 0 #FFC700,
-            -2px 1px 0 #FFC700,
-            2px 1px 0 #FFC700,
-            -2px -2px 0 #FFC700,
-            2px -2px 0 #FFC700,
-            -2px 2px 0 #FFC700,
-            2px 2px 0 #FFC700,
-            -2px -2px 0 #FFC700,
-            2px -2px 0 #FFC700,
-            -2px 2px 0 #FFC700,
-            2px 2px 0 #FFC700;
+        color: transparent;
+        -webkit-text-stroke: 2px #FFC700;
+        // text-shadow:
+        //     -0 -2px 0 #FFC700,
+        //     0 -2px 0 #FFC700,
+        //     -0 2px 0 #FFC700,
+        //     0 2px 0 #FFC700,
+        //     -2px -0 0 #FFC700,
+        //     2px -0 0 #FFC700,
+        //     -2px 0 0 #FFC700,
+        //     2px 0 0 #FFC700,
+        //     -1px -2px 0 #FFC700,
+        //     1px -2px 0 #FFC700,
+        //     -1px 2px 0 #FFC700,
+        //     1px 2px 0 #FFC700,
+        //     -2px -1px 0 #FFC700,
+        //     2px -1px 0 #FFC700,
+        //     -2px 1px 0 #FFC700,
+        //     2px 1px 0 #FFC700,
+        //     -2px -2px 0 #FFC700,
+        //     2px -2px 0 #FFC700,
+        //     -2px 2px 0 #FFC700,
+        //     2px 2px 0 #FFC700,
+        //     -2px -2px 0 #FFC700,
+        //     2px -2px 0 #FFC700,
+        //     -2px 2px 0 #FFC700,
+        //     2px 2px 0 #FFC700;
     }
     &__button {
         display: block;
