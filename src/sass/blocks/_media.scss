@@ -1003,9 +1003,14 @@
         &__image {
             display: none;
         }
-        &::after,
+        &::after {
+            top: 500px;
+            right: 50px;
+        }
         &::before {
-            display: none;
+            top: 650px;
+            right: 300px;
+            opacity: .3;
         }
         &__items {
             display: none;
@@ -1300,6 +1305,13 @@
         }
         &__rating-block {
             margin-left: 45px;
+        }
+        &__rating-label {
+            &:hover,
+            &:hover~.reviews__rating-label,
+            &:checked~.reviews__rating-label:hover {
+                color: #FFC700;
+            }
         }
         &__rating-block-label {
             font-size: 18px;
@@ -1901,6 +1913,15 @@
     }
     .promo {
         overflow: hidden;
+        &::after,
+        &::before {
+            top: 500px;
+            opacity: .2;
+            right: 0;
+        }
+        &::before {
+            top: 450px;
+        }
         .container {
             padding-left: 0;
             padding-right: 0;
@@ -2124,6 +2145,9 @@
         }
         &-button-prev {
             left: 20px;
+        }
+        &-slider {
+            padding-top: 12px;
         }
     }
     .without-risks {
