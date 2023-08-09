@@ -43,7 +43,11 @@
         margin-bottom: 10px;
         font-weight: 500;
     }
+    &__policy-link {
+        text-decoration: underline;
+    }
     &__processing-link {
+        text-decoration: underline;
         margin-bottom: 0;
     }
     &__menu-button {

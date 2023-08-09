@@ -76,6 +76,10 @@
         display: block;
         text-decoration: underline;
         margin-bottom: 20px;
+        transition: all .3s;
+        &:hover {
+            color: #aa0b0d;
+        }
     }
     &__working-schedule {
         color: #1D1E23;

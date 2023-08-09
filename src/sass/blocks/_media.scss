@@ -1477,6 +1477,32 @@
             font-size: 24px;
             width: 379px;
         }
+        &-policy__dialog {
+            max-width: 832px;
+            padding: 55px 123px;
+        }
+        &-policy__descr {
+            font-size: 18px;
+        }
+        &-policy__close {
+            width: 30px;
+            height: 30px;
+            top: 25px;
+            right: 25px;
+        }
+        &-processing__dialog {
+            max-width: 832px;
+            padding: 40px 94px;
+        }
+        &-processing__descr {
+            font-size: 18px;
+        }
+        &-processing__close {
+            width: 30px;
+            height: 30px;
+            top: 25px;
+            right: 25px;
+        }
     }
 }
 
@@ -1632,6 +1658,9 @@
         &-thanks__image {
             top: 282px;
             width: 300px;
+        }
+        &-policy__dialog {
+            padding: 55px 80px;
         }
     }
     .reviews {
@@ -1894,6 +1923,14 @@
         }
         &__inner {
             margin-bottom: 30px;
+        }
+    }
+    .modal {
+        &-policy__dialog {
+            padding: 55px 45px;
+        }
+        &-processing__dialog {
+            padding: 65px 40px;
         }
     }
 }
@@ -2363,6 +2400,35 @@
             max-width: 335px;
             font-size: 10px;
             line-height: 105%;
+        }
+        &-policy__dialog {
+            padding: 74px 20px;
+        }
+        &-policy__close {
+            width: 28px;
+            height: 28px;
+            top: 20px;
+            right: 20px;
+        }
+        &-policy__descr {
+            font-size: 16px;
+            margin-bottom: 20px;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+        &-processing__dialog {
+            max-width: 335px;
+            padding: 72px 20px;
+        }
+        &-processing__close {
+            width: 28px;
+            height: 28px;
+            top: 20px;
+            right: 20px;
+        }
+        &-processing__descr {
+            font-size: 16px;
         }
     }
     .phone-fix {

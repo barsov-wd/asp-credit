@@ -2,6 +2,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const howSlider = new Swiper('.how-slider', {
         slidesPerView: 4,
         spaceBetween: 15,
+        loop: true,
         // centeredSlides: true
         navigation: {
             nextEl: '.how-button-next',
@@ -66,6 +67,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const problemsSlider = new Swiper('.reviews-slider', {
         slidesPerView: 1,
+        loop: true,
         // centeredSlides: true
         pagination: {
             el: '.swiper-pagination',
@@ -369,6 +371,8 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     modal('.modal-main', 'modal--active', '[data-modal]', '.modal-main__close');
+    modal('.modal-policy', 'modal--active', '[data-policy]', '.modal-policy__close');
+    modal('.modal-processing', 'modal--active', '[data-processing]', '.modal-processing__close');
 
 });
     

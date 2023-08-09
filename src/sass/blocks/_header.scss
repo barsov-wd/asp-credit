@@ -26,13 +26,14 @@
             transition: .3s;
             left: 0;
             bottom: -5px;
-            width: 100%;
+            width: 0;
             height: 3px;
             background: #AA0B0D;
         }
 
         &:hover {
             &::after {
+                width: 100%;
                 opacity: 1;
                 visibility: visible;
             }
@@ -50,6 +51,15 @@
     &__links {
         display: flex;
         column-gap: 10px;
+    }
+
+    &__link-icon {
+        &:hover {
+            .header__link-fill {
+                transition: all .3s;
+                fill: #ffc700;
+            }
+        }
     }
 
     &__burger {

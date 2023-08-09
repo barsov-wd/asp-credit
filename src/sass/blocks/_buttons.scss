@@ -16,10 +16,11 @@
 
 .button-effect {
     position: relative;
+    transition: 0.3s;
     overflow: hidden;
 
     &:hover {
-        transform: none;
+        transform: scale(1.03);
     }
 
     &::after {
