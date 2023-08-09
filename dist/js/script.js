@@ -344,7 +344,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
         if (triggers_.length > 0) {
             triggers_.forEach(item => {
-                item.addEventListener('click', () => {
+                item.addEventListener('click', (e) => {
+                    e.preventDefault();
                     modal_.classList.add(modalActiveClass);
                     document.body.style.overflow = 'hidden';
                     document.body.style.marginRight = `${scrollWidth}px`;
