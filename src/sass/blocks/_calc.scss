@@ -216,7 +216,7 @@
     &__form-inner {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
     }
     &__form-left-title {
         color: #1D1E23;
@@ -227,19 +227,19 @@
         margin-bottom: 15px;
     }
     &__form-result-box {
-        margin-bottom: 25px;
+        margin-bottom: 35px;
         &:last-of-type {
-            margin-bottom: 55px;
+            margin-bottom: 75px;
         }
     }
     &__form-result-text {
         color: #1D1E23;
-        font-size: 24px;
+        font-size: 34px;
     }
     &__form-result-title {
         color: #FFC700;
         font-family: 'Gilroy Black', sans-serif;
-        font-size: 35px;
+        font-size: 45px;
         font-weight: 900;
     }
     &__form-left-block {
