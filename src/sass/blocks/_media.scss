@@ -1499,6 +1499,30 @@
             top: 25px;
             right: 25px;
         }
+        &-reviews__dialog {
+            max-width: 832px;
+            min-height: 714px;
+            padding: 88px 94px 51px 79px;
+        }
+        &-reviews__descr {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        &-reviews__rating-text {
+            font-size: 18px;
+        }
+        &-reviews__title {
+            font-size: 24px;
+        }
+        &-reviews__text {
+            font-size: 20px;
+        }
+        &-reviews__close {
+            width: 30px;
+            height: 30px;
+            top: 25px;
+            right: 25px;
+        }
     }
 }
 
@@ -1935,6 +1959,9 @@
         }
         &-processing__dialog {
             padding: 65px 40px;
+        }
+        &-reviews__dialog {
+            padding: 65px 61px 45px 40px;
         }
     }
 }
@@ -2438,6 +2465,32 @@
         }
         &-processing__descr {
             font-size: 16px;
+        }
+        &-reviews__dialog {
+            padding: 91px 20px 88px;
+            max-width: 375px;
+            text-align: center;
+        }
+        &-reviews__descr {
+            font-size: 18px;
+            text-align: center;
+        }
+        &-reviews__rating-text {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        &-reviews__title {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        &-reviews__text {
+            font-size: 18px;
+        }
+        &-reviews__close {
+            width: 28px;
+            height: 28px;
+            top: 20px;
+            right: 20px;
         }
     }
     .phone-fix {
