@@ -35,25 +35,91 @@ window.addEventListener('DOMContentLoaded', () => {
             nextEl: '.get-button-next',
             prevEl: '.get-button-prev',
         },
+        pagination: {
+            el: '.get-pagination',
+            type: 'bullets',
+            clickable: true
+        },
         grid: {
             rows: 2,
             fill: 'row',
         },
         breakpoints: {
             300: {
-                slidesPerView: 'auto',
+                slidesPerView: 1,
+                spaceBetween: 20,
+                grid: {
+                    rows: 1,
+                    fill: 'row',
+                },
+                pagination: {
+                    el: '.get-pagination',
+                    type: 'bullets',
+                    renderBullet: function (index, className) {
+                        return '<span class="' + className + '">' + (index + 1) + "</span>";
+                    },
+                },
+                loopedSlides: 2
+            },
+            577: {
+                slidesPerView: 2,
                 spaceBetween: 15,
                 grid: {
                     rows: 1,
                     fill: 'row',
                 },
+                pagination: {
+                    el: '.get-pagination',
+                    type: 'bullets',
+                    renderBullet: function (index, className) {
+                        return '<span class="' + className + '">' + (index + 1) + "</span>";
+                    },
+                }
             },
-            577: {
-                slidesPerView: 'auto',
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 15,
                 grid: {
                     rows: 1,
                     fill: 'row',
                 },
+                pagination: {
+                    el: '.get-pagination',
+                    type: 'bullets',
+                    renderBullet: function (index, className) {
+                        return '<span class="' + className + '">' + (index + 1) + "</span>";
+                    },
+                }
+            },
+            991: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+                grid: {
+                    rows: 1,
+                    fill: 'row',
+                },
+                pagination: {
+                    el: '.get-pagination',
+                    type: 'bullets',
+                    renderBullet: function (index, className) {
+                        return '<span class="' + className + '">' + (index + 1) + "</span>";
+                    },
+                }
+            },
+            1100: {
+                slidesPerView: 3,
+                spaceBetween: 15,
+                grid: {
+                    rows: 1,
+                    fill: 'row',
+                },
+                pagination: {
+                    el: '.get-pagination',
+                    type: 'bullets',
+                    renderBullet: function (index, className) {
+                        return '<span class="' + className + '">' + (index + 1) + "</span>";
+                    },
+                }
             },
             1200: {
                 slidesPerView: 4,
@@ -64,6 +130,23 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+
+    function calcHeight() {
+        let images = document.querySelectorAll('.get-item__img img');
+        images.forEach(image => {
+            let width = image.clientWidth;
+            image.style.height = width + 'px';
+            image.style.top = '-' + (width / 2) + 'px';
+            image.parentNode.style.height = (width / 2) + 'px';
+            image.parentNode.parentNode.parentNode.style.paddingTop = (width / 2) + "px";
+        });
+    }
+
+    window.addEventListener('resize', () => {
+        calcHeight(); 
+    });
+
+    calcHeight();
 
     const problemsSlider = new Swiper('.reviews-slider', {
         slidesPerView: 1,
@@ -177,6 +260,7 @@ window.addEventListener('DOMContentLoaded', () => {
             document.body.style.overflow = '';
         }
     });
+
 
     // range, calc
 
