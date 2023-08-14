@@ -12,6 +12,9 @@
         flex-wrap: wrap;
         gap: 20px;
     }
+    &__content {
+        display: none;
+    }
     &__item {
         padding: 20px 23px 23px;
         width: 520px;
